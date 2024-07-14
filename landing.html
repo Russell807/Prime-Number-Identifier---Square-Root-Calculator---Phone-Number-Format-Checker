@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#pni" class="logo">
+                <img src="/images/logo.png" alt="MyWebsite Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#pni">Prime Number Identifier</a></li>
+                    <li><a href="#sqrt">Square Root Calculator</a></li>
+                    <li><a href="#phone">Phone Number Format Checker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="pni" class="content pni">
+        <div class="container">
+            <h2>Prime Number Identifier</h2>
+            <p>Enter a number to check if it's a prime number.</p>
+            <input type="text" id="prime-input" placeholder="Enter a number">
+            <button id="prime-btn" onclick="checkPrimeNumber()">Check</button>
+            <p id="prime-result"></p>
+        </div>
+    </section>
+    <section id="sqrt" class="content sqrt">
+        <div class="container">
+            <h2>Square Root Calculator</h2>
+            <p>Enter a number to calculate its square root.</p>
+            <input type="text" id="sqrt-input" placeholder="Enter a number">
+            <button id="sqrt-btn" onclick="computeSqrt()">Calculate</button>
+            <p id="sqrt-result"></p>
+        </div>
+    </section>
+    <section id="phone" class="content phone">
+        <div class="container">
+            <h2>Phone Number Format Checker</h2>
+            <p>Enter a phone number to check its format.</p>
+            <input type="text" id="phone-input" placeholder="Enter a phone number">
+            <button id="phone-btn" onclick="checkNumberFormat()">Check Format</button>
+            <p id="phone-result"></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024. All rights reserved. Designed by Russell</p>
+        </div>
+    </footer>
+</body>
+</html>
